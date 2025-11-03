@@ -41,7 +41,7 @@ void insertTermSorted(Node** head, int coeff, int exp) {
         curr->coeff += coeff;
         if (curr->coeff == 0) {  // Remove node if coeff becomes 0
             if (prev == NULL) {
-                *head = curr->next;
+                *head = (*head)->next;
             } else {
                 prev->next = curr->next;
             }

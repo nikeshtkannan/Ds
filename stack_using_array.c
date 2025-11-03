@@ -1,10 +1,6 @@
 #include <stdio.h>
 
 int stack[100],i,choice=0,top=-1,n;
-
-void push();
-void pop();
-void show();
 void main(){
     printf("Enter the limit:");
     scanf("%d",&n);
